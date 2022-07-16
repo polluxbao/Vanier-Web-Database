@@ -1,0 +1,8 @@
+@sql\0.schema.sql
+@1.employees.sql
+@2.departments.sql
+@3.dept_manager.sql
+@4.dept_emp.sql
+@5.salaries.sql
+@6.titles.sql
+@Drop_Schema.sql

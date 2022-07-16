@@ -1,0 +1,149 @@
+<html>
+<head>
+<!--
+    Lab 2: Linking HTML Web Pages
+    Author: Qingjun Bao
+    Date  : 2022-07-09
+
+    Filename:         student.htm
+    Supporting files: Nwlogo1.JPG
+
+    1. Developing a Web Site: All files should be saved under the subfolder Lab2
+        • Creating a Hypertext Link
+        • Creating a New sub folder vaniercourse under Lab2
+        • Specifying a Folder Path
+    2. Linking to Locations within Documents
+        • Using the id attribute to reference each section
+        • Linking to an id
+        • Creating Links between Documents
+    3. Working with Linked Images
+        • To turn an image into a hypertext link pointing to the home page. 
+        • Image Maps
+    4. Linking to Resources on the Internet
+        • Linking to an URL
+        • Linking to an Email Address
+    5. Working with Hypertext Attributes
+        • Opening a secondary Window
+        • Creating Tooltip
+    6. Working with Metadata
+        • Using the Meta Element
+        • Using the http-equiv Attribute
+-->
+<meta http-equiv="refresh" content="60" />
+<meta http-equiv="refresh" content="50; url=http://www.vaniercollege.qc.ca" />
+<meta http-equiv="refresh" content="text/html; charset=ISO-8859-15" />
+
+<title>This is the title of my web page</title>
+</head>
+<body>
+    <div>
+    <a href="https://www.vaniercollege.qc.ca/"> 
+        <img src="./Nwlogo1.JPG" alt="Vanier College" style="width: 275px; height:125px;object-fit:none; object-position: 0 0;">
+    </a>
+    </div>
+    
+    <div>
+    <img src="./Nwlogo1.JPG" alt="Course List" usemap="#Vanier" style="border-width: 0;"/>
+    <map name="Vanier">
+        <area shape="rect" coords="0,0,275,120" href="#" alt="Home">
+        <area shape="rect" coords="285,80,410,120" href="./course_list.htm" alt="Vanier Course">
+        <area shape="rect" coords="425,80,515,120" href="#A" alt="Glossary A for Course">
+    </map>
+    </div>
+
+    <h1>Vanier College</h1>
+    <h2>Fall Semester 2022</h2>
+    <a href="./course_list.htm" target="window" title="Link to a Course List">Course List</a>
+    <a href="./vaniercourse/msaccess.htm">MS Access Course</a>
+    <p> if you have any question email us to <a href="mailto:help@vaniercollege.qc.ca">Contect me</a></p>
+    <h1 style="color: red;">Glossary</h1>
+    <p>
+        [<a href="#A">A</a>]
+        [<a href="#B">B</a>]
+        [<a href="#C">C</a>]
+        [<a href="#D">D</a>]
+        [<a href="#E">E</a>]
+        [<a href="#F">F</a>]
+    </p>
+
+    <h2 id="A">A</h2>
+    <p>Section A</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+    <h2 id="B">B</h2>
+    <p>Section B</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+    <h2 id="C">C</h2>
+    <p>Section C</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+    <h2 id="D">D</h2>
+    <p>Section D</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+    <h2 id="E">E</h2>
+    <p>Section E</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+    <h2 id="F">F</h2>
+    <p>Section F</p>
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+
+
+    <p>
+        HTML documents have htm or html as an extension such as students.htm or student.html
+        We gonna use Notepad++ to edit HTML documents.</p>
+    <p>
+        What are computerization and personal assets that should
+        be acquired by a student to succeed and perform in her study?
+        Do you have any specific expectations about your long term evolution?</p>
+    <blockquote>
+        <p>I am very excited to be student at Vanier College.</p>
+        <p>The environment is so stimulating for maximizing the learning. Qingjun Bao.</p>
+    </blockquote>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_brands.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_categories.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_customers.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_orders.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_order_items.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_products.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_staffs.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_stocks.ctl
+sqlldr 'sys/admin@xe AS SYSDBA' control=pr_stores.ctl

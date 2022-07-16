@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!--This is a comment. 
+      Student
+      Auther : Qingjun Bao
+      Date   : 2022-06-30
+      -->
+
+      <meta charset="UTF-8">
+      <title>This is the Course List</title>
+
+</head>
+
+<body>
+<div style="font-family: Times New Roman;">
+    <address>
+        821 Avenue Sainte-Croix, Montreal, Quebec Canada H4L 3X9
+        <b>Tel: 514.744.7500</b>
+    </address>
+    <p>
+    <img src="Nwlogo.jpg" alt="Vanier College">
+    </p>
+    <h1 style="color: red;">Vanier College</h1>
+    <h2 style="color: green;">Fall Semester 2012</h2>
+    <h3 style="text-align: right;">Course List</h3>
+    <hr />
+    <dl>
+        <dt>HTML and <i>Internet</i> Programming</dt>
+        <dd>Learn how to Develop Web Site</dd>
+        <dt>Analysis of The Work Function & Communication</dt>
+        <dd>Basic of Communication at work place</dd>
+        <dt>Association of Law Notions to the Professional Practice</dt>
+        <dd>Key Elements of Law</dd>
+    </dl>
+    <p>&copy; Copy Right issue, The &lt;p&gt;is used to indicate a new paragraph</p>
+
+</div>
+
+<div>
+    <h3>Using your own wording, answer the following questions briefly:</h3>
+    <ol>
+        <li><b>What are the HTML elements for nested ordered list within another ordered list? <br>
+            Write the general structure.</b></li>
+        <b style="color: red;">answer : </b>
+        <p> Nested Ordered List </p>
+<textarea rows="20" cols="80" style="resize:none;">
+<ol>
+    <li>First</li>
+    <ol type="a">
+        <li>Sub First</li>
+        <li>Sub Second</li>
+        <li>Sub Third</li>
+    </ol>
+    <li>Second</li>
+    <ol type="a">
+        <li>Sub First</li>
+        <li>Sub Second</li>
+    </ol>
+    <li>Third</li>
+    <ol type="a">
+        <li>Sub First</li>
+        <li>Sub Second</li>
+    </ol>
+</ol>
+</textarea>
+
+            <ol>
+                <li>First</li>
+                <ol type="a">
+                    <li>Sub First</li>
+                    <li>Sub Second</li>
+                    <li>Sub Third</li>
+                </ol>
+                <li>Second</li>
+                <ol type="a">
+                    <li>Sub First</li>
+                    <li>Sub Second</li>
+                </ol>
+                <li>Third</li>
+                <ol type="a">
+                    <li>Sub First</li>
+                    <li>Sub Second</li>
+                </ol>
+            </ol>
+        </p>
+        <br /> <br />
+
+
+        <li><b>What is the block level element, give an example of block level element?</b></li>
+        <b style="color: red;">answer : </b>
+        <p>The block level element</p>
+<textarea rows="8" cols="80" style="resize:none;">
+<div style="width:500px; background:yellow;">
+    <p style="width:200px;">
+        This are some words...
+    </p>
+</div>
+</textarea>
+            <div style="width:500px; background:yellow;">
+                <p style="width:200px;">
+                    This are some words...
+                </p>
+            </div>
+        <br /> <br />
+
+
+        <li><b>What is the in-line level element, give an example of in-line level element?</b></li>
+        <b style="color: red;">answer : </b>
+        <p>The in-line level element</p>
+<textarea rows="5" cols="80" style="resize:none;">
+<p>The following span is an <span style="font-weight:bold">inline element</span>; its background has been colored to display both the beginning and end of the inline element's influence.</p>
+</textarea>
+        <div>
+        <p>The following span is an <span style="font-weight:bold">inline element</span>;
+            its background has been colored to display both the beginning and end of
+            the inline element's influence.</p>
+        </div>
+        <br /> <br />
+
+
+        <li><b>Is it possible to nest unordered list HTML element ul within ordered list HTML element ol?</b></li>
+        <b style="color: red;">answer : </b>
+        <p>To nest unordered list HTML element ul within ordered list HTML element ol</p>
+<textarea rows="20" cols="80" style="resize:none;">
+<ol>
+    <li>First</li>
+    <ul>
+        <li>Sub First</li>
+        <li>Sub Second</li>
+        <li>Sub Third</li>
+    </ul>
+    <li>Second</li>
+    <ul>
+        <li>Sub First</li>
+        <li>Sub Second</li>
+    </ul>
+    <li>Third</li>
+    <ul>
+        <li>Sub First</li>
+        <li>Sub Second</li>
+    </ul>
+</ol>
+</textarea>
+        <div>
+        <ol>
+            <li>First</li>
+            <ul>
+                <li>Sub First</li>
+                <li>Sub Second</li>
+                <li>Sub Third</li>
+            </ul>
+            <li>Second</li>
+            <ul>
+                <li>Sub First</li>
+                <li>Sub Second</li>
+            </ul>
+            <li>Third</li>
+            <ul>
+                <li>Sub First</li>
+                <li>Sub Second</li>
+            </ul>
+        </ol>
+        </div>
+        <br /> <br />
+
+        <li><b>What is the difference between element (tag) and attribute in HTML? <br>
+            Give an example of each one of them.</b></li>
+        <b style="color: red;">answer : </b>
+        <P>
+        The tag used as containers, such as &lt;div&gt; and &lt;span&gt; <br>
+        The attribute has key="value" format, to describe the tag ahead the attribute.
+        </P>
+<textarea rows="3" cols="80" style="resize:none;">
+<p style="color:red">The example of element and attribute</p>
+</textarea>
+        <P>
+        <span style="background-color: yellow;">&lt;p&gt;</span>
+        and 
+        <span style="background-color: yellow;">&lt;/p&gt;</span> 
+        are tags,
+        <span style="background-color: yellow;">style="color:red"</span>
+        is an attribute.
+        </P>
+        <br /> <br />
+
+
+        <li><b>Write the HTML coding for two images displayed in different lines.</b></li>
+        <b style="color: red;">answer : </b>
+        <p>Breaking to new line with tag &lt;p&gt; &lt;/p&gt; </p>
+<textarea rows="3" cols="80" style="resize:none;">
+<p><img src="Nwlogo.jpg" alt="image_1"></p>
+<p><img src="Nwlogo.jpg" alt="image_2"></p>
+</textarea>
+        <p><img src="Nwlogo.jpg" alt="image_1"></p>
+        <p><img src="Nwlogo.jpg" alt="image_2"></p>  
+
+        <br /> <br />
+
+        <li><b>Write the HTML coding to display the following sentences in color:</b></li>
+        <p>
+            <div style="font-family: Times New Roman;">
+            Welcome to <span style="color: red;">Vanier</span> College
+            <hr />
+            Learning <i>Oracle PL/SQL</i> is <b>cool</b>, <br>
+            <br>
+            Programming in Java is <b> fun,</b> <br>
+            <br>
+            Mastering HTLM coding is <b>bliss. </b> <br>
+            <hr />
+            Notes: &lt;!- -Vanier in red, College in Blue, cool, fun and bliss are bold, insert horizontal
+            lines too, <i>Oracle PL/SQL, Java, HTML coding</i> in italic - - &gt;
+            </div>
+        </p>
+            <b style="color: red;">answer : </b>
+<p>The html code below:</p>
+<textarea rows="15" cols="80" style="resize:none;">
+<div>
+    Welcome to <span style="color: red;">Vanier</span> College
+    <hr />
+    Learning <i>Oracle PL/SQL</i> is <b>cool</b>, <br>
+    <br>
+    Programming in Java is <b> fun,</b> <br>
+    <br>
+    Mastering HTLM coding is <b>bliss. </b> <br>
+    <hr />
+    Notes: &lt;!- -Vanier in red, College in Blue, cool, fun and bliss are bold, insert horizontal lines too, <i>Oracle PL/SQL, Java, HTML coding</i> in italic - - &gt;
+</div>
+</textarea>
+
+        <br /><br />
+
+        <li><b>True or false and why:</b></li>
+        <ol type="a">
+            <li>HTML is an interpreter language.</li>
+            <b style="color: red;">answer : </b>
+            <p>Not quite Correct</p>
+            HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages.
+            HTML is only used to markup the contents, not a programming language. And different Web browser would render to difference result.
+            <br /><br /><br />
+
+            <li>HTML page is executed on the web server.</li>
+            <b style="color: red;">answer : </b>
+            <p>False</p>
+            HTML page is executed on Client side. <br>
+            The full name of HTML is Hyper Text Marked Language. 
+            Translated into Chinese, it is hypertext markup language. 
+            It is a language for interaction between client and server in B/S architecture. 
+            HTML files are parsed and executed by the client.
+            <br /><br /><br />
+
+            <li>HTML page is stored in the client side.</li>
+            <b style="color: red;">answer : </b>
+            <p>False</p>
+            HTML page is stored in the Server side.
+
+            <br /><br /><br />
+
+            <li>You should indent HTML opening tag and closing tag to display the web page.</li>
+            <b style="color: red;">answer : </b>
+            <p>True</p>
+            Tags generally appear in pairs, starting tags and closing tags, or opening tags and closing tags.
+            
+            <br /><br /><br />
+
+
+            <li>The HTML title element is included within head element.</li>
+            <b style="color: red;">answer : </b>
+            <p>True</p>
+            <br /><br /><br />
+
+            <li>Attributes are mandatory in every HTML element.</li>
+            <b style="color: red;">answer : </b>
+            <p>False</p>
+            Elements could be set without attributes.
+            <br /><br /><br />
+
+            <li>HTML element “address” is block-level element.</li>
+            <b style="color: red;">answer : </b>
+            <p>True</p>
+            
+
+        </ol>
+    </ol> 
+</div>
+</body>
+</html>

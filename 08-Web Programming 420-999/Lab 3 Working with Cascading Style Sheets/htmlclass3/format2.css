@@ -1,0 +1,13 @@
+/*
+    My First CSS file for Style formatting
+    Author Qingjun Bao
+*/
+
+html {font-family: Times New Roman, sans-serif;}    
+
+h1 {color: green;}
+h2, h3 {color: red;}
+address {
+    color: blue;
+    text-align: right;
+}
