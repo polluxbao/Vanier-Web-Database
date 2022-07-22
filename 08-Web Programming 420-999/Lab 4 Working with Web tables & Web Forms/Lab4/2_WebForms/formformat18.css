@@ -1,0 +1,29 @@
+/*
+CSS file for Style formatting
+Review 6: Web Form
+*/
+
+label.labelblock {display: block; position: relative; left: 12px; top: 0px;}
+label.labelblock input {position: absolute; left: 150px;}
+#registerForm span {color: red;}
+label.indenlabel {position: relative; left: 150px;}
+#fname, #lname, #sadd {width: 25em;}
+#phone, #city {width: 10em;}
+#state {width: 3em;}
+#zip {width: 7em;}
+
+label.Optionlabel {display: block;
+                position: relative;
+                left: 150px; top: 0px;}
+
+#AddressOptions {width: 280px;}
+
+#AddressOptions select {position: relative;
+                    left: 150px; top: 0px;}
+
+label.labelfeedback {display: block;
+                    position: relative;
+                    left: 12px; top: 0px;}
+                    
+
+

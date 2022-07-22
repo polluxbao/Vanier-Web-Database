@@ -1,0 +1,7 @@
+/*
+CSS file for Style formatting
+Review 6: Web Form
+*/
+
+label.labelblock {display: block; position: relative; left: 12px; top: 0px;}
+label.labelblock input {position: absolute; left: 150px;}

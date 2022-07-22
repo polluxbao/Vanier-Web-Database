@@ -1,0 +1,249 @@
+<html>
+<head>
+<!-- 
+   New Perspectives on HTML and XHTML
+   Tutorial 6
+   Review Assignment
+
+   The Lighthouse Volunteer Page
+   Author: Qingjun Bao
+   Date:   2022-07-21
+
+   Filename:         volunteer.htm
+   Supporting files: back.jpg, left.jpg, lhouse.jpg, main.css
+                     right.jpg, Donationformat.css
+
+-->
+
+   <title>Lighthouse Volunteer Form</title>
+   <link href="main.css" rel="stylesheet" type="text/css" />
+   <link href="Donationformat.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <div id="head"><img src="lhouse.jpg" alt="The Lighthouse" /></div>
+
+   <div id="links">
+      <ul>
+         <li><a href="#">home</a></li>
+         <li><a href="#">projects</a></li>
+         <li><a href="#">upcoming events</a></li>
+         <li><a href="#">community links</a></li>
+         <li><a href="#">staff</a></li>
+         <li><a href="#">donations</a></li>
+         <li><a href="#">volunteers</a></li>
+         <li><a href="#">contact info</a></li>
+      </ul>
+   </div>
+
+   <div id="mainContent">
+      <div id="leftColumn">
+         <p>The success of The Lighthouse reflects the dedication and support of members of
+            the community who have helped make our dream a reality. We cannot continue to
+            operate without contributions from people like you.
+         </p>
+         <p>You can make a tax-deductible donation online using your American Express,
+            Discover, Master, or Visa card. Please fill out the form on this page.
+         </p>
+         <p>The Lighthouse is always looking for volunteers. We especially need help in the
+            following areas:
+         </p>
+         <ul>
+            <li>Mechanics</li>   
+            <li>Carpenters</li> 
+            <li>Electricians</li> 
+            <li>Cooks</li> 
+            <li>Comnputer technicians</li> 
+            <li>Babysitters</li> 
+            <li>Data entry persons</li> 
+         </ul>
+         <p>and <a href="#">many others</a>. Please consider donating your time and talents to your community
+            and your neighbors.
+         </p>
+         <p>Thank you so much for your generosity!
+         </p>
+
+         <p>&mdash; Terry Ives<br />
+            &nbsp;&nbsp;&nbsp; Director, <i>The Lighthouse</i></p>
+      </div>
+
+      <form name="registerForm" id="registerForm" action="RegisterScript.php">
+         <div id="rightColumn">
+            <h1>Donation Form</h1>
+            <p><span>*</span> indicates required information</p>
+         
+            <fieldset id="contact">
+               <legend>Contact information</legend>
+
+               <fieldset id="AddressOptions">
+                  <legend>Address For</legend>
+                  <label class="Optionlabel">Home 
+                     <input type="radio" id="homeType" name="addressType" value="home" />
+                  </label>
+                  <label class="Optionlabel">Business 
+                     <input type="radio" id="busType" name="addressType" value="business" />
+                  </label>
+               </fieldset>
+
+               <label class="labelblock">
+                  First Name<span>*</span>
+                  <input type="text" id="fname"/>
+               </label>
+               <label class="labelblock">
+                  Last Name<span>*</span>
+                  <input type="text" id="lname"/>
+               </label>
+               <label class="labelblock">
+                  Phone<span>*</span>
+                  <input type="text" id="phone"/>
+               </label>
+               <label class="labelblock">
+                  Street Address<span>*</span>
+                  <input type="text" id="sadd"/>
+               </label>
+               <label class="indenlabel">
+                  City<span>*</span>
+                  <input type="text" id="city" value="St. Peters"/>
+               </label>
+               <label class="indenlabel">
+                  State<span>*</span>
+                  <input type="text" id="state"
+                     value="MO" maxlength="2" />
+               </label>
+               <label class="indenlabel">
+                  ZIP<span>*</span>
+                  <input type="text" id="zip" maxlength="10"/>
+               </label>
+            </fieldset>
+            <br>
+
+            <fieldset id="donation">
+               <legend>Donation information</legend>
+               <br>
+               <label class="labelblock">
+                  Donation Amount<span>*</span>
+                  <input type="text" id="damon"/>
+               </label>
+               
+               <label class="labelblock">
+                  Credit Card<span>*</span>
+                  <select name="selCardType" id="selCardType">
+                     <option value="express">American Express</option>
+                     <option value="master">Master Card</option>
+                     <option value="visa">Visa Card</option>
+                  </select>
+               </label>
+
+               <label class="labelblock">
+                  Cardholder Name<span>*</span>
+                  <input type="text" id="dcardname"/>
+               </label>
+               <label class="labelblock">
+                  Card Number<span>*</span>
+                  <input type="text" id="dcardnum"/>
+               </label>
+
+               <label class="labelblock">
+                  Expiration Date<span>*</span>
+                  <select name="selMonth" id="selMonth">
+                     <option value="jan">January (01)</option>
+                     <option value="feb">February (02)</option>
+                     <option value="mar">March (03)</option>
+                     <option value="apr">April (04)</option>
+                     <option value="may">May (05)</option>
+                     <option value="jun">June (06)</option>
+                     <option value="jul">July (07)</option>
+                     <option value="aug">August (08)</option>
+                     <option value="sep">September (09)</option>
+                     <option value="oct">October (10)</option>
+                     <option value="nov">November (11)</option>
+                     <option value="dec">December (12)</option>
+                  </select>
+                  
+                  <select name="selYear" id="selYear">
+                     <option value="y2022">2022</option>
+                     <option value="y2023">2023</option>
+                     <option value="y2024">2024</option>
+                     <option value="y2025">2025</option>
+                     <option value="y2026">2026</option>
+                     <option value="y2027">2027</option>
+                     <option value="y2028">2028</option>
+                  </select>
+               </label>
+
+               <fieldset id="volunteerBefore">
+                  <legend>Have you volunteered before?</legend>
+                  <label class="Optionlabel">Yes 
+                     <input type="radio" id="volYes" name="volYes" value="Yes" />
+                  </label>
+                  <label class="Optionlabel">No 
+                     <input type="radio" id="volNo" name="volNo" value="No" />
+                  </label>
+               </fieldset>
+               <br>
+               <fieldset id="canHelp">
+                  <legend>I can help with the (check all that apply)</legend>
+                  <table>
+                     <tr>
+                        <td><input type="checkbox" id="babySit" name="babySit" value="babySit">
+                           <label for="babySit">Baby Sitting</label>
+                        </td>
+                        <td><input type="checkbox" id="cleaning" name="cleaning" value="cleaning"> 
+                           <label for="cleaning">Cleaning</label>
+                        </td>
+                        <td><input type="checkbox" id="clerDuty" name="clerDuty" value="clerDuty"> 
+                           <label for="clerDuty">Clerical Duties</label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox" id="eventPlan" name="eventPlan" value="eventPlan">
+                           <label for="eventPlan">Event Planning</label>
+                        </td>
+                        <td><input type="checkbox" id="mailing" name="mailing" value="mailing">
+                           <label for="mailing">Mailing</label>
+                        </td>
+                        <td><input type="checkbox" id="maintan" name="maintan" value="maintan">
+                           <label for="maintan">Maintenance</label>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox" id="mealPrep" name="mealPrep" value="mealPrep">
+                           <label for="mealPrep">Meal Preparation</label>
+                        </td>
+                        <td><input type="checkbox" id="tutoring" name="tutoring" value="tutoring">
+                           <label for="tutoring">Tutoring</label>
+                        </td>
+                        <td><input type="checkbox" id="website" name="website" value="website">
+                           <label for="website">Web Site</label>
+                        </td>
+                     </tr>
+                  </table>
+               </fieldset>
+            </fieldset>
+            <br>
+            <fieldset id="feedback">
+               <legend>Feedback</legend>
+               <input type="checkbox" id="interestVol" name="interestVol" value="interestVol">
+                     <label for="interestVol">I'm interested in volunteering at The Lighthouse.</label>
+               <label class="labelfeedback">
+                  Comments <br><br>
+                  <textarea name="comment" id="comment" rows="5" cols="60">
+                  </textarea>
+               </label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit Donation" />
+            <input type="reset" value="Cancel" />
+         </div>
+      </form>
+
+      <address>
+         The Lighthouse &bull;
+         150 Cavates Rd. &bull;
+         St. Peters, MO  63376 &bull;
+         (636) 555 - 4477
+      </address>
+   </div>
+</body>
+
+</html>

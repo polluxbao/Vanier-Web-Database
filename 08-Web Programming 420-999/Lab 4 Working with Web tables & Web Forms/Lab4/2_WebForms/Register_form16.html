@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link href="./formformat16.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form name="registerForm" id="registerForm" action="RegisterScript.php">
+            <fieldset id="AddressOptions">
+                <legend>Address For</legend>
+                <label class="Optionlabel">Home 
+                    <input type="radio" id="homeType" name="addressType" value="home" />
+                </label>
+                <label class="Optionlabel">Business 
+                    <input type="radio" id="busType" name="addressType" value="business" />
+                </label>
+
+                <select name="addressType" id="addressType" size="2">
+                    <option value="homeType">Home</option>
+                    <option value="busType">Business</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="contact">
+                <legend>Contact information</legend>
+                <label class="labelblock">
+                    First Name:<span>*</span>
+                    <input type="text" id="fame"/>
+                </label>
+                <label class="labelblock">
+                    Last Name:<span>*</span>
+                    <input type="text" id="lame"/>
+                </label>
+                <label class="labelblock">
+                    Phone:<span>*</span>
+                    <input type="text" id="phone"/>
+                </label>
+                <label class="labelblock">
+                    Street Address:<span>*</span>
+                    <input type="text" id="sadd"/>
+                </label>
+                <label class="indenlabel">
+                    City:<span>*</span>
+                    <input type="text" id="city"/>
+                </label>
+                <label class="indenlabel">
+                    State:<span>*</span>
+                    <input type="text" id="state"
+                        value="QC" maxlength="2" />
+                </label>
+                <label class="indenlabel">
+                    ZIP:<span>*</span>
+                    <input type="text" id="zip" maxlength="10"/>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Power Consumption</legend>
+                <label class="labelblock">
+                    Electricity Consumption:<span>*</span>
+                    <input type="text" id="elec" />
+                </label>
+                <label class="labelblock">
+                    Gaz Consumption:<span>*</span>
+                    <input type="text" id="gaz"/>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <label class="labelfeedback">
+                    <input type="checkbox" id="message" name="message" value="yes">
+                    Do you want to receive update email messages?
+                </label>
+                <label class="labelfeedback">
+                    Enter Your Comments:<span>*</span>
+                    <textarea name="comment" id="comment" rows="5" cols="60">
+                        Please Insert Your Comments here
+                    </textarea>
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>
