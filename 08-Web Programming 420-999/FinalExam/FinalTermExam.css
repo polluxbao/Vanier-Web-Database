@@ -1,0 +1,15 @@
+#mainContent {position: relative; width: 1000px; }
+form {margin: 10px 0 10px 0;}
+div p {font-size: 16px;}
+
+#leftColumn {width: 500px; float: left; padding-left: 20px; }
+#rightColumn  {float: left; }
+#throughColumn {width: 900px; float: left; padding-left: 20px; }
+#midColumn {width: 900px; float: left; margin-top: 30px; 
+    display:flex; justify-content:center;}
+
+fieldset {width: 400px;}
+select {overflow-y: auto;}
+textarea {overflow-y:visible}
+
+

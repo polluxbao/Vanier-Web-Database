@@ -1,0 +1,211 @@
+<html>
+<head>
+<!-- 
+    Web Programming 420-999
+    Web and Database
+    Vanier College
+    Final Exam
+
+    Author: Qingjun Bao
+    Date:   2022-07-27
+
+    Filename:         FinalTermExam.htm
+    Supporting files: FinalTermExam.css
+-->
+
+   <title>Final Exam</title>
+   <link href="FinalTermExam.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>Internet Usage Survey</h2>
+    <div>
+        <p>This survey is being conducted to help identify the internet usage patterns of our customers.
+            <br>
+        Please take a few monents to complete and submit this short form. Thank you for your cooperation.</p>
+    </div>
+    <div id="mainContent">
+        <div id="leftColumn">
+            <p>What type of Internet connection do you have?
+            <br>
+            (Select One)</p>
+        </div>
+        <div id="rightColumn">
+            <form action="#">
+            <select name="selNetType" id="selNetType" size="4">
+                <option value="dialup">Dial-up</option>
+                <option value="dsl">DSL</option>
+                <option value="highspeed" selected>High Speed Cable</option>
+                <option value="other">Other</option>
+             </select>
+            </form>
+        </div>
+    </div>
+
+    <form id="iform" action="">
+    <div id="mainContent">
+        <div id="leftColumn">
+            <p>What type of computer do you use most at home?</p>
+        </div>
+        <div id="rightColumn">
+            <br>
+            <label class="Optionlabel"> 
+                <input type="radio" id="desktop" name="desktop" value="desktop" />
+                Desktop
+            </label>
+            <label class="Optionlabel">
+                <input type="radio" id="laptop" name="laptop" value="laptop" />
+                Laptop
+            </label>
+        </div>
+    </div>
+    </form>
+
+    <form id="iform" action="">
+    <div id="mainContent">
+        <div id="leftColumn">
+            <p>How would you describe your main reason for using the Internet?</p>
+        </div>
+        <div id="rightColumn">
+            <label class="Optionlabel"> 
+                <input type="radio" id="work-related" name="work-related" value="work-related" />
+                To do work-related activities
+            </label>
+            <br>
+            <label class="Optionlabel">
+                <input type="radio" id="school-related" name="school-related" value="school-related" />
+                To do school-related activities
+            </label>
+            <br>
+            <label class="Optionlabel">
+                <input type="radio" id="entertainment" name="entertainment" value="entertainment" />
+                For entertainment purpose
+            </label>
+            <br>
+            <label class="Optionlabel">
+                <input type="radio" id="otheract" name="otheract" value="otheract" />
+                Other activities
+            </label>
+        </div>
+    </div>
+    </form>
+
+    <form id="iform" action="">
+    <div id="mainContent">
+        <div id="leftColumn">
+            <fieldset id="visited">
+                <legend>Type of sites visited</legend>
+                <p>
+                    What types of web site do you access most often?
+                    <br>
+                    Check all that apply.
+                </p>
+                <input type="checkbox" id="selfimprov" name="selfimprov" value="selfimprov">
+                <label for="selfimprov">Self Improvement</label>
+                <br>
+                <input type="checkbox" id="entertainment" name="entertainment" value="entertainment">
+                <label for="entertainment">Entertainment</label>
+                <br>
+                <input type="checkbox" id="newssport" name="newssport" value="newssport">
+                <label for="newssport">News and Sports</label>
+                <br>
+                <input type="checkbox" id="reference" name="reference" value="reference">
+                <label for="reference">Reference</label>
+                <br>
+                <input type="checkbox" id="email" name="email" value="email">
+                <label for="email">Email</label>
+             </fieldset>
+        </div>
+        </form>
+
+        <form id="iform" action="">
+        <div id="rightColumn">
+            <fieldset id="timespent">
+                <legend>Time spent using Internet</legend>
+                <p>
+                    During an average week, how long do you spend online?
+                </p>
+                <input type="radio" id="h03" name="h03" value="h03">
+                <label for="h03">0-3 Hours</label>
+                <br>
+                <input type="radio" id="h46" name="h46" value="h46">
+                <label for="h46">4-6 Hours</label>
+                <br>
+                <input type="radio" id="h710" name="h710" value="h710">
+                <label for="h710">7-10 Hours</label>
+                <br>
+                <input type="radio" id="h1114" name="h1114" value="h1114">
+                <label for="h1114">11-14 Hours</label>
+                <br>                
+                <input type="radio" id="h15p" name="h15p" value="h15p">
+                <label for="h15p">15+ Hours</label>
+                <br>
+             </fieldset>
+        </div>
+        </form>
+
+        <form id="iform" action="">
+            <div id="mainContent">
+                <div id="throughColumn">
+                <br>
+                <p>Please comment on your opinions concerning Internet privacy and safety.</p>
+                <label class="opinions">
+                    <textarea name="opinions" id="opinions" rows="5" cols="100">
+                    </textarea>
+                </label>
+                </div>
+            </div>
+        </form>
+
+        <form id="iform" action="">
+            <div id="mainContent">
+                <div id="leftColumn">
+                    <label class="labelblock">
+                        <br>
+                        First Name: <br>
+                        <input type="text" id="fname"/>
+                    </label>
+                </div>
+                <div id="rightColumn">
+                    <label class="labelblock">
+                        <br>
+                        Last Name: <br>
+                        <input type="text" id="lname"/>
+                    </label>
+                </div>
+            </div>
+        </form>
+
+        <form id="iform" action="">
+            <div id="mainContent">
+                <div id="leftColumn">
+                    <label class="labelblock">
+                        <br>
+                        Age: 
+                        <input type="text" id="age" size="5"/>
+                    </label>
+                </div>
+                <div id="rightColumn">
+                    <label class="labelblock">
+                        <br>
+                        Zip Code: 
+                        <input type="text" id="zip" size="10"/>
+                    </label>
+                </div>
+            </div>
+        </form>
+        <br>
+
+        <form id="iform" action="">
+            <div id="mainContent">
+                <div id="midColumn">
+                    <input type="submit" value="Click to Submit" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="Clear Form" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
